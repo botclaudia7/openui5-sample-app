@@ -1,4 +1,4 @@
-specVersion: '1.0'
+specVersion: "1.0"
 metadata:
   name: openui5-sample-app
 type: application
@@ -7,15 +7,15 @@ specVersion: "1.0"
 kind: extension
 type: project-shim
 metadata:
-  name: my.application.thirdparty
+  name: openui5-sample-app.thirdparty
 shims:
   configurations:
-    fhir-json-client: # name as defined in package.json
+    fhir-json-client:
       specVersion: "1.0"
-      type: module # Use module type
+      type: module
       metadata:
         name: fhir-json-client
       resources:
         configuration:
           paths:
-            resources/fhir-json-client: ""
+            /resources/openui5/sample-app/thirdparty/: "lib"
